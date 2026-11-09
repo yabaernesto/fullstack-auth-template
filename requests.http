@@ -1,0 +1,22 @@
+### login
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "username": "yaba",
+  "password": "123456"
+}
+
+### Products
+POST http://localhost:3333/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2FsZSIsImlhdCI6MTc5NDI0MTUzMiwiZXhwIjoxNzk0MzI3OTMyLCJzdWIiOiIxIn0.NotDq9AQOCbLzVtjDILUMpNhaoqlMXvuZK4Al-4W2sU
+
+{
+  "name": "Teclado",
+  "price": 1.20
+}
+
+###
+GET http://localhost:3333/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3OTQyNDA4ODgsImV4cCI6MTc5NDMyNzI4OCwic3ViIjoiMSJ9.sEP26imHnFGW7MHjR3wrpZ-e7s_ujjKtPGY2lKbnLkM
